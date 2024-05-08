@@ -9,21 +9,22 @@ namespace ics4u_summative____
     {
         Intro,
         Settings,
-        MainLevel,
+        MainScreen,
         Pause,
         EndScreen
     }
+
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        Color bgColor, healthMask;
+        Color bgColor;
 
-        Texture2D magpieSprite, robinSprite;
-        Rectangle window, magpieRect, robinRect;
+        Texture2D magpieSprites, robinSprites;
+        Rectangle window, magpieLocation, robinLocation;
 
-        Vector2 schmoove;
+        int framerate;
 
         float timer;
 
